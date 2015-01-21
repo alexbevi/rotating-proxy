@@ -1,8 +1,8 @@
-FROM ubuntu:12.04
-MAINTAINER Matthias Kadenbach <matthias.kadenbach@gmail.com>
+FROM ubuntu:14.04
+MAINTAINER Alex Bevilacqua <alex@alexbevi.com>
+# MAINTAINER Matthias Kadenbach <matthias.kadenbach@gmail.com>
 
 RUN apt-get update
-# RUN apt-get upgrade -y
 RUN apt-get install libssl-dev wget curl ruby1.9.3 -y
 RUN ln -s /lib/x86_64-linux-gnu/libssl.so.1.0.0 /lib/libssl.so.1.0.0
 
